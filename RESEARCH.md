@@ -21,7 +21,11 @@ Chinese-language results included a redistributed theme pack on a download site 
 
 ## Developer
 
-The executable credits ELEMENTAL SOFT, effectively a one-person operation. No technical notes about engines or file formats were ever published, and none of the developer's later titles received extraction tools either.
+The only developer attribution anywhere in these assets is the literal string `ELEMENTAL SOFT`: it appears in every IDX2 archive header and in archives embedded inside the companion executables (the clock and mascot programs). KonMenu.exe itself carries no vendor strings, no copyright notice, and no version information.
+
+A Japanese software circle of the same name is well documented elsewhere. It dates back to at least the PC-98 era ([doujin software gallery](https://seesaawiki.jp/akagai_pakkuri/d/ELEMENTAL%20SOFT)), operates the website [element2.sakura.ne.jp](https://element2.sakura.ne.jp/) (an older domain, elementalsoft.jp, now serves a parked page), and publishes Windows desktop-accessory programs of exactly this genre, most recently 3D fleet-mascot programs distributed through DLsite and Booth. That this circle created the K-ON! program is a reasonable inference from the matching name and product type; no public source states it outright.
+
+Either way, the identification does not affect the format documentation: every structure in SPEC.md is derived from the shipped binaries and verified against the shipped assets, whoever made them.
 
 ## Conclusion
 

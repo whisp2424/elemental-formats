@@ -1,9 +1,11 @@
-# ELEMENTAL SOFT resource formats
+# The IDX2 and EL01 resource formats
 
 Technical specification of the two custom formats used by the K-ON! Desktop Accessory (けいおん! デスクトップアクセサリー, Kyoto Animation shop release, 2009/2011, Win32)
 
 - **IDX2** - an archive container holding every asset of the program (`KonMenu.idx`)
 - **EL01** - an image format used for every graphic inside that archive (`*.el` files)
+
+About attribution: the only developer identity found anywhere in these assets is the literal string `ELEMENTAL SOFT` embedded in every IDX2 header (§2), including archives embedded inside the program's companion executables. A long-running Japanese circle of the same name publishes desktop-accessory programs of the same genre; that this circle produced the files documented here is a reasonable inference from that signature, not an established fact.
 
 Both were reconstructed from disassembly of `KonMenu.exe` (32-bit x86 PE, image base 0x400000) and verified against everything the game ships: 262 `.el` images, 3 `.wav` sounds, 17 `.txt` text files and one `main.sd` script blob. Appendix B lists the machine-code locations backing every claim. The two tools in this repository (`el01`, `idx2`) implement the whole document.
 
